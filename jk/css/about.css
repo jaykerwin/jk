@@ -1,0 +1,70 @@
+.public_container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.homepage_body {
+    width: 100%;
+    height: 100%;
+    background: #0f0f10;
+    background-size: cover;
+}
+
+.body {
+    width: 100%;
+}
+
+.main .left {
+    float: left;
+    margin-right: 108px;
+}
+
+.main .left .headImg {
+    margin-right: 107px;
+}
+
+.container {
+    /* display: inline-block; */
+    /* width: 1045px; */
+}
+
+.container .line {
+    margin-right: 107px;
+}
+
+.container h1 {
+    color: #84848D;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.container .txt {
+    font-size: 20px;
+    color: #474852;
+    margin-top: 49px;
+    font-weight: 100;
+}
+
+.container h4 {
+    font-size: 20px;
+    color: #84848d;
+    font-weight: 100;
+}
+
+.container ul li {
+    margin-top: 50px;
+}
+
+.container ul li p {
+    font-size: 14px;
+    color: #474852;
+    font-weight: 100;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.main::after {
+    content: '';
+    display: block;
+    clear: both;
+}

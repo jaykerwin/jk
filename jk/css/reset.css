@@ -1,0 +1,53 @@
+*,
+a,
+body,
+button,
+caption,
+dd,
+div,
+dl,
+dt,
+em,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+img,
+input,
+label,
+li,
+ol,
+p,
+span,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", Arial, "微软雅黑", STHeiti, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}

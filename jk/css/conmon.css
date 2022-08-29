@@ -1,61 +1,82 @@
-.public_container{
-	width: 1600px;
-	margin: 0 auto;
-}
-.homepage_body .public_header{
+.homepage_body .public_header {
 	width: 100%;
 	height: 100px;
 	line-height: 100px;
-	background-color: #fff;
-	overflow: hidden;
+	background-color: #0f0f10;
+	position: sticky;
+	top: 0;
+	z-index: 99;
 }
-.homepage_body .public_header .header_nav .header_logo{
+
+.public_container {
+	width: 1600px;
+	margin: 0 auto;
+}
+
+.homepage_body .public_header .header_nav .header_logo {
 	margin-top: 24px;
 	float: left;
 }
-.homepage_body .public_header .header_nav .header_menu{
+
+.homepage_body .public_header .header_nav .header_menu {
 	height: 100px;
 	line-height: 100px;
 	float: right;
 	position: relative;
 }
-.homepage_body .public_header .header_nav .header_menu li{
+
+.homepage_body .public_header .header_nav .header_menu li {
 	margin-right: 100px;
 	display: inline-block;
 	font-size: 16px;
-	font-weight: 300;
-	color: #888;
-	cursor: pointer;
 }
-.homepage_body .public_header .header_nav .header_menu li:hover{
-	font-weight: bold;
+
+.homepage_body .public_header .header_nav .header_menu a {
 	font-size: 16px;
-	color: #333333;
+	font-weight: 300;
+	color: #fff;
+	cursor: pointer;
+	opacity: 0.3;
 }
-.homepage_body .public_header .header_nav .header_menu .work{
+
+.clear {
+	clear: both;
+}
+
+
+.homepage_body .public_header .header_nav .header_menu .active {
 	font-weight: bold;
-	color: #333333;
+	font-size: 18px;
+	color: #fff;
+	transition: 0.3s;
+	opacity: 1;
 }
-.homepage_body .public_header .header_nav .header_menu li:last-child{
+
+.homepage_body .public_header .header_nav .header_menu li:last-child {
 	margin-right: 0;
 }
-.public_footer_frame{
+
+.public_footer_frame {
 	width: 100%;
 	height: 100px;
 	line-height: 100px;
 	clear: both;
-	background-color: #FFFFFF;	
-	margin-top: -20px;
-}
-.public_footer_frame .public_footer{
-	font-size: 12px;
-	color: #bbb;
-	font-weight: 300;
-}
-.public_footer_frame .public_footer .statement{
-	float: left;
-}
-.public_footer_frame .public_footer .copyright{
-	float: right;
+	background-color: #0f0f10;
+	/* margin-top: -40px; */
 }
 
+.public_footer_frame .public_footer {
+	font-size: 12px;
+	color: #474852;
+	font-weight: 100;
+	width: 1600px;
+	margin: 0 auto;
+}
+
+.public_footer_frame .public_footer .statement {
+	float: left;
+}
+
+.public_footer_frame .public_footer .copyright {
+	float: right;
+}

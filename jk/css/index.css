@@ -1,27 +1,42 @@
-*, a, body, button, caption, dd, div, dl, dt, em, figure, form, h1, h2, h3, h4, h5, h6, html, i, img, input, label, li, ol, p, span, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul {
-    margin: 0;
-    padding: 0;
-	list-style: none;
-	font-family: "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", Arial, , "微软雅黑", STHeiti, sans-serif;
+@font-face {
+	font-family: SourceHanSerifCN-Heavy;
+	src: url("SourceHanSerifCN-Heavy.otf"), url("SourceHanSerifCN-Heavy.ttf"), url("SourceHanSerifCN-Heavy.eot");
 }
 
- a{
-	 text-decoration: none;
- }
-.body{
- 	background-color: #FFFFFF;
- }
-.body .mian{
- 	position: relative;
+.homepage_body {
+	width: 100%;
+	height: 100%;
+	background: #0f0f10;
+	background-size: cover;
+}
+
+
+.body {
+	background-color: #0f0f10;
+
+	/* height: 100%;
+	width: 100%; */
+
+}
+
+.public_container {
+	width: 1600px;
+	margin: 0 auto;
+}
+
+.body .mian {
+	position: relative;
 	overflow: hidden;
- }
+}
+
 .body .mian .pic {
 	float: left;
 	width: 679px;
 	height: 700px;
 	display: inline-block;
 }
-.body .mian .mian_title{
+
+.body .mian .mian_title {
 	position: absolute;
 	top: 150px;
 	left: 500px;
@@ -30,40 +45,34 @@
 	font-size: 60px;
 	line-height: 88px;
 	letter-spacing: 0px;
-	color: #0e358e;
+	color: #fff;
 	font-family: SourceHanSerifCN-Heavy;
 	font-weight: bold;
 }
-@font-face {
-	font-family:SourceHanSerifCN-Heavy;
-	src: url("SourceHanSerifCN-Heavy.otf"),url("SourceHanSerifCN-Heavy.ttf"),url("SourceHanSerifCN-Heavy.eot");		
-}
-/* .body .mian .explain{
-	position: absolute;
-	bottom: 0;
-	left: 700px;
-} */
-.body .mian .explain{
+
+.body .mian .explain {
 	display: inline-block;
 	margin-top: 588px;
 	margin-left: 40px;
-	color: #222;
-	margin-bottom: 20px ;
+	color: #A2A2A2;
+	margin-bottom: 20px;
 }
-.body .mian .explain i{
+
+.body .mian .explain i {
 	display: inline-block;
 	width: 30px;
 	height: 1px;
-	background-color: #000000;
+	background-color: #A2A2A2;
 	margin-bottom: 5px;
 	margin-right: 10px;
-	/* border-bottom: 0.5px solid #ddd; */
 }
-.body .mian .explain h4{
-	color: #222222;
+
+.body .mian .explain h4 {
+	color: #A2A2A2;
 	font-size: 14px;
 	font-weight: 300;
 }
+
 /* .body .mian .explain h4::before{
 	content: "";
 	width: 20px;
@@ -71,26 +80,188 @@
 	color: #000000;
 	background: #888888;
 } */
-.body .mian .explain p{
+.body .mian .explain p {
 	font-size: 20px;
 	font-weight: 300;
 }
-.body .mian .explain .rolename{
+
+.body .mian .explain .rolename {
 	margin-bottom: 20px;
 }
-.body .mian .mian_right{
+
+.body .mian .mian_right {
 	width: 300px;
 	position: absolute;
-	bottom: 0;
+	top: 200px;
 	right: 0;
 }
-.body .mian .mian_right .explore{
+
+.body .mian .mian_right .explore {
 	line-height: 30px;
 	font-size: 14px;
 	color: #888888;
 	font-weight: 300;
 }
-.body .mian .mian_right .arrow{
+
+.body .mian .mian_right .arrow {
 	float: right;
 }
-	
+
+.mian_right::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.mian .panel1 {
+	padding-top: 5px;
+	background: #0f0f10;
+}
+
+/* .mian .panel1 .panel2 {
+	margin-top: 20px;
+	overflow: hidden;
+} */
+.mian .panel1 .panel2 {
+	margin-top: 16px;
+	width: 1600px;
+}
+
+.mian .panel1 .panel2:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.mian .panel1 .panel2 .card_box {
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background: #0f0f10;
+	border: 4px solid #0f0f10;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.mian .panel1 .panel2 .card_box:hover {
+	background: #fff;
+	/* box-shadow: 0 8px 5px -5px #000; */
+	border: 4px solid #fff;
+	box-sizing: border-box;
+	transition: 0.4s;
+	width: 300px;
+	overflow: hidden;
+}
+
+.mian .panel1 .panel2 .card_box .card_bigimg {
+	border-radius: 4px 4px 0 0;
+	width: 300px;
+	height: 195px;
+
+}
+
+.mian .panel1 .panel2 .card_box .card_bigimg a img {
+	border: none;
+	border-radius: 4px 4px 0 0;
+	transition: all;
+	transition-property: all;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;
+	transition-delay: 0s;
+	display: block;
+	width: 300px;
+	height: 195px;
+	background-size: cover;
+}
+
+.mian .panel1 .panel2 .card_box h4 a {
+	font-size: 14px;
+	color: #666;
+	overflow: hidden;
+	width: 235px;
+	text-decoration: none;
+	margin: 10px 15px 0px 15px;
+	word-break: break-all;
+	display: -webkit-box;
+	/**对象作为伸缩盒子模型展示**/
+	-webkit-box-orient: vertical;
+	/**设置或检索伸缩盒子对象的子元素的排列方式**/
+	-webkit-line-clamp: 1;
+	/**显示的行数**/
+	overflow: hidden;
+	/**隐藏超出的内容**/
+}
+
+.mian .panel1 .panel2 .card_box h4 a:hover {
+	color: #f28714;
+}
+
+.mian .panel1 .panel2 .card_box .card_info_title {
+	font-size: 12px;
+	color: #666;
+	margin: 0px 15px 20px 15px;
+}
+
+/* .mian .panel1 .panel2 .card_box .car_info_item {
+	margin: 0px 15px 20px 15px;
+	color: #666;
+	font-size: 12px;
+} */
+
+.mian .panel1 .panel2 .card_box .car_info_item span:before {
+	margin-right: 10px;
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+/* .mian .panel1 .panel2 .card_box .car_info_item .popularity:before {
+	background: url(../img/eyes.svg);
+	background-size: 16px auto;
+}
+
+.mian .panel1 .panel2 .card_box .car_info_item .comment:before {
+	background: url(../img/comment.svg);
+	background-size: 16px auto;
+}
+
+.mian .panel1 .panel2 .card_box .car_info_item .recommend:before {
+	background: url(../img/recommend.svg);
+	background-size: 16px auto;
+} */
+
+.mian .panel1 .panel2 .card_box .card_item {
+	padding: 0 16px;
+	height: 50px;
+}
+
+.mian .panel1 .panel2 .card_box .card_item .user_avatar {
+	display: inline-block;
+}
+
+.mian .panel1 .panel2 .card_box .card_item .user_avatar a {
+	line-height: 50px;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+
+.mian .panel1 .panel2 .card_box .card_item .user_avatar a img {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.mian .panel1 .panel2 .card_box .card_item .time {
+	float: right;
+	line-height: 50px;
+	color: #BBBBBB;
+	font-size: 12px;
+}
